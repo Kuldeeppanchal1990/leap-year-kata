@@ -29,4 +29,9 @@ public class LeapYearCheckerTest {
     public void isLeapYear_WhenDivisbleBy400() {
         assertTrue(leapYearChecker.check(1600));
     }
+
+    @Test
+    public void isNotALeapYear_WhenDivisibleBy100ButNotBy400() {
+        assertFalse(leapYearChecker.check(1800));
+    }
 }
