@@ -24,4 +24,9 @@ public class LeapYearCheckerTest {
     public void isALeapYear_WhenDivisibleBy4() {
         assertTrue(leapYearChecker.check(1996));
     }
+
+    @Test
+    public void isLeapYear_WhenDivisbleBy400() {
+        assertTrue(leapYearChecker.check(1600));
+    }
 }
